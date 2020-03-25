@@ -7,7 +7,6 @@ import (
 )
 
 func (m *Module) ContactUser(w http.ResponseWriter, r *http.Request)  {
-	fmt.Println("MASUKKK")
 	if r.Method == "GET" {
 		err := m.Template.ExecuteTemplate(w, "contact.html", nil)
 		if err != nil {

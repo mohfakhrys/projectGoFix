@@ -50,6 +50,9 @@ type Queries struct {
 	LoginUser 		*sql.Stmt
 	InsertContents	*sql.Stmt
 	SendMessage 	*sql.Stmt
+	SelectArticles	*sql.Stmt
+	RemoveArticles	*sql.Stmt
+	EditArticles	*sql.Stmt
 }
 
 func NewQueries(db *sql.DB) *Queries {
@@ -57,14 +60,18 @@ func NewQueries(db *sql.DB) *Queries {
 	queryLoginUser		:= `select * from public.users where username = $1 and pass = $2`
 	queryInsertContent 	:= `insert into public.articles (user_id, contents) values (1, $1)`
 	querySendMessage	:= `insert into public.pesan (email, message) values ($1, $2)`
-	//querySelectData := `select * from userinfo`
+	querySelectArticles := `select * from public.articles`
+	queryRemoveArticles := `delete from public.articles where article_id = $1`
+	queryEditArticles	:= `update public.articles set contents = $1 where article_id = $2`
 
 	return &Queries{
 		InsertUser: prepare(queryInsertUser, db),
 		LoginUser: prepare(queryLoginUser, db),
 		InsertContents: prepare(queryInsertContent, db),
 		SendMessage: prepare(querySendMessage, db),
-		//UpdateUser: prepare(queryUpdateUser, db),
+		SelectArticles: prepare(querySelectArticles, db),
+		RemoveArticles: prepare(queryRemoveArticles, db),
+		EditArticles: prepare(queryEditArticles, db),
 	}
 }
 
