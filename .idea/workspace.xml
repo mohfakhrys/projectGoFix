@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd501604-53d4-4fbc-9689-943364ef2151" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/var/templates/editarticle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/user/homebackup.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProjectGO" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProjectGO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/var/templates/addarticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/var/templates/addarticle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/var/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/var/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/var/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/var/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/var/templates/homebackup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/addarticles.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/articles.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/contact.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/contact.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/home.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/home.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/init.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
