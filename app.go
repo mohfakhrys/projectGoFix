@@ -1,7 +1,7 @@
 package main
 
 import (
-	"bitbucket.org/Hacktive8/FinalProjectGO/src/user"
+	"hactiv8/fix/src/user"
 
 	"fmt"
 	"html/template"
@@ -9,7 +9,7 @@ import (
 	"net/http"
 )
 
-func main()  {
+func main() {
 	fmt.Println("hello")
 	Template := template.Must(template.ParseGlob("files/var/templates/*"))
 	user := user.New(Template)
