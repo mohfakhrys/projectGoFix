@@ -21,7 +21,7 @@ func (m *Module) RegisterUser(w http.ResponseWriter, r *http.Request) {
 			fmt.Println("missing username")
 		}
 		if password == "" {
-			fmt.Println("missing department")
+			fmt.Println("missing password")
 		}
 
 		_, err := m.Queries.InsertUser.Exec(username, password)

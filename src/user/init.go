@@ -59,7 +59,7 @@ func NewQueries(db *sql.DB) *Queries {
 	queryInsertUser := `insert into public.users (username, pass) values ($1, $2)`
 	queryLoginUser := `select * from public.users where username = $1 and pass = $2`
 	queryInsertContent := `insert into public.articles (user_id, contents) values (1, $1)`
-	querySendMessage := `insert into public.pesan (email, message) values ($1, $2)`
+	querySendMessage := `insert into public.pesan (email, messages) values ($1, $2)`
 	querySelectArticles := `select * from public.articles`
 	queryRemoveArticles := `delete from public.articles where article_id = $1`
 	queryEditArticles := `update public.articles set contents = $1 where article_id = $2`

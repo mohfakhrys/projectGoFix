@@ -26,11 +26,11 @@ func (m *Module) LoginUser(w http.ResponseWriter, r *http.Request) {
 
 		_, err := m.Queries.LoginUser.Query(username, password)
 		if err != nil {
-			log.Println("Failed to insert data")
+			log.Println("Failed to login")
 			return
 		}
 
-		log.Println("berhasil insert data")
+		log.Println("berhasil login")
 
 		http.Redirect(w, r, "http://localhost:9090/", 303)
 	}
